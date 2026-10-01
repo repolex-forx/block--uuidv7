@@ -48,10 +48,34 @@
       "repolex:graphType": "ast",
       "repolex:graphFilePath": "aggregate/ast/2007448e21d214a06cc8a9f4edccfb56200f0e45/chunk-001.nq.gz",
       "repolex:graphFileSize": 2595703
+    },
+    {
+      "@type": "repolex:GraphFile",
+      "repolex:graphType": "lsp",
+      "repolex:graphFilePath": "aggregate/lsp/2007448e21d214a06cc8a9f4edccfb56200f0e45.nq.gz",
+      "repolex:graphFileSize": 169301
     }
   ],
-  "repolex:parseStatus": "ast_complete",
+  "repolex:parseStatus": "enrich_complete",
   "repolex:parsedAt": "2026-10-01T08:12:30.169781+00:00",
   "repolex:parserVersion": "0.1.10",
-  "git:tagName": "main"
+  "git:tagName": "main",
+  "repolex:dependencyRepo": [
+    {
+      "@id": "https://repolex.ai/r/rust-random/rand",
+      "repolex:packageName": "rand",
+      "git:hexsha": "3474ec047279e5de32676c50154ff7d76d12a94e",
+      "git:tagName": "0.9.5"
+    },
+    {
+      "@id": "https://repolex.ai/r/rust-random/getrandom",
+      "repolex:packageName": "getrandom",
+      "git:hexsha": "38e4ad38309a85b56eef4fc759535ccfc322ba9a",
+      "git:tagName": "v0.3.4"
+    },
+    {
+      "@id": "https://repolex.ai/r/criterion-rs/criterion.rs",
+      "repolex:packageName": "criterion"
+    }
+  ]
 }

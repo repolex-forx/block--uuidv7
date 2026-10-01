@@ -8,7 +8,7 @@
     {
       "@id": "https://repolex.ai/r/block/uuidv7/commit/2007448e21d214a06cc8a9f4edccfb56200f0e45",
       "git:hexsha": "2007448e21d214a06cc8a9f4edccfb56200f0e45",
-      "repolex:parseStatus": "ast_complete",
+      "repolex:parseStatus": "enrich_complete",
       "git:tagName": "main"
     },
     {

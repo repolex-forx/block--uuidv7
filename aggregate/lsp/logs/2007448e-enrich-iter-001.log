@@ -1,0 +1,20 @@
+[2026-10-01T08:17:46Z] === ENRICH ITERATION 1 START | repo=block/uuidv7 sha=2007448e ===
+[2026-10-01T08:17:46Z] [iter=1] PHASE START: enrich repo=block/uuidv7 sha=2007448e runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/2007448e-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/2007448e21d214a06cc8a9f4edccfb56200f0e45.nq.gz
+[2026-10-01T08:17:46Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-10-01T08:17:51Z] [iter=1] AST store loaded triples=185288 load_secs=5 mem_mb=338 MB
+[2026-10-01T08:17:51Z] [iter=1] Step 2: Finding LSP targets mem_mb=338 MB
+[2026-10-01T08:17:52Z] [iter=1] LSP targets found call_sites=2158 imports=61 extends=0 implements=0 secs=0
+[2026-10-01T08:17:52Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=338 MB
+[2026-10-01T08:17:52Z] [iter=1] Position index built positions=11028 nodes_with_types=14193 secs=1 mem_mb=338 MB
+[2026-10-01T08:17:52Z] [iter=1] Step 3: Starting LSP resolution mem_mb=338 MB already_completed_types=[] already_completed_files=0
+[2026-10-01T08:17:52Z] [iter=1] Resolving target type target_type=call_site count=2158
+[2026-10-01T08:18:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.8 files_done=5 resolved=0 errors=2158 current=swift/Tests/UUIDv7Tests/CompactStringTests.swift
+[2026-10-01T08:19:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.3 files_done=11 resolved=138 errors=2224 current=swift/Sources/UUIDv7/MonotonicUUIDv7.swift
+[2026-10-01T08:19:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.2 files_done=19 resolved=420 errors=4648 current=rust/benches/benchmarks.rs
+[2026-10-01T08:20:15Z] [iter=1] Target type resolved target_type=call_site resolved=440 errors=4664 secs=142 mem_mb=338 MB
+[2026-10-01T08:20:15Z] [iter=1] Resolving target type target_type=import_statement count=61
+[2026-10-01T08:20:31Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=2.7 files_done=11 resolved=7 errors=0 current=swift/Tests/UUIDv7Tests/UUIDv7Tests.swift
+[2026-10-01T08:20:45Z] [iter=1] Target type resolved target_type=import_statement resolved=20 errors=0 secs=30 mem_mb=338 MB
+[2026-10-01T08:21:19Z] [iter=1] Step 5: Writing final enrichment file triples=9006
+[2026-10-01T08:21:19Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/2007448e21d214a06cc8a9f4edccfb56200f0e45.nq.gz size_kb=165
+[2026-10-01T08:21:19Z] [iter=1] PHASE END: enrich elapsed_s=213 elapsed_min=3.6 total_triples=9006
