@@ -8,8 +8,9 @@
     {
       "@id": "https://repolex.ai/r/block/uuidv7/commit/2007448e21d214a06cc8a9f4edccfb56200f0e45",
       "git:hexsha": "2007448e21d214a06cc8a9f4edccfb56200f0e45",
-      "repolex:parseStatus": "enrich_complete",
-      "git:tagName": "main"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "main",
+      "repolex:parsedAt": "2026-10-01T08:22:25.523136+00:00"
     },
     {
       "@id": "https://repolex.ai/r/block/uuidv7/commit/2643897a28168c761381fe57a9004aff46abb39c",
